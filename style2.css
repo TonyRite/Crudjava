@@ -1,0 +1,53 @@
+body{
+background-color:rgb(230, 61, 89); 
+}
+body > table{
+    width: 80%;
+    margin: 40px auto;
+    background-color:rgb(207, 57, 107);
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px 15px;
+}
+tr:nth-child(even),table.list thead>tr{
+    background-color: rgb(161, 126, 126);
+}
+input[type="text"], input[type="number"],[type="email"],[type="tel"]{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*input[type="text"], input[type="number"],[type="email"]:hover{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(231, 65, 65);
+    border-radius: 4px;
+}*/
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding: 6px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    margin: 15px 0 10px;
+    outline: none;
+}
+input[type="submit"]:hover{
+    background: #eb5353;
+}
+
+input[type="reset"]:hover{
+    background: #eb5353;
+}

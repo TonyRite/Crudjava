@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple friends Database</title>
+    <link type="text/css" rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="on" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" required>
+                    </div>
+                    <div>
+                        <label for="PhoneNumber">PhoneNumber</label>
+                        <input type="tel" name="PhoneNumber" id="PhoneNumber" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="university">university</label>
+                        <input type="text" name="university" id="university" required>
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="FriendList">
+                    <thead>
+                        <tr>
+                            <th>FullName</th>
+                            <th>PhoneNumber</th>
+                            <th>Email</th>
+                            <th>University</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script2.js"></script>
+</body>
+</html>
